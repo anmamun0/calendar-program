@@ -1,0 +1,23 @@
+Explain this code
+
+This code is a simple Python program that displays a calendar for a given month and year. Here's an explanation of the code:
+
+1 Import the calendar module: This module provides functions for working with calendars, including printing a calendar for 
+    a specified month and year.
+
+2 Define the display_calendar function: This function takes two arguments year and month, which represent the year and month 
+    for which the calendar should be displayed.
+
+3 Create a calendar: The calendar.monthcalendar(year, month) function is used to create a matrix representing the calendar 
+    for the specified month and year. The matrix contains one row for each week of the month, and each row has seven elements 
+    representing the days of the week (Monday through Sunday).
+
+4 Get the month name: The calendar.month_name[month] dictionary maps the month number (1 for January, 2 for February, etc.) 
+    to the month name. This is used to display the name of the month at the top of the calendar.
+
+5 Print the calendar: The calendar is printed by looping over each row of the matrix and printing the day numbers for each day 
+    of the week. If the day number is 0, it means there is no day in that position (for example, the first row of a calendar 
+    may start with a blank day or two if the month starts later in the week). In this case, a blank line is printed. 
+
+7 Test the program: Finally, the program is tested by calling display_calendar with the year and month arguments set to 2022 
+    and 2, respectively. This will display the calendar for February 2022.
